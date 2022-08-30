@@ -1,0 +1,314 @@
+/* estilos globales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+    background-color: black;
+    flex-direction: row;
+}
+
+.navbar li {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header {
+    background-color: black;
+}
+
+
+/* fin de estilos globales */
+
+
+/* estilos index */
+
+.titulo {
+    background-color: bisque;
+    border: px solid black;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    margin: 10px;
+    height: 10;
+    width: 5;
+}
+
+.slider {
+    background-color: gray;
+    margin: auto;
+    width: 100%;
+}
+
+.subtitulo {
+    font-family: "arial";
+    margin: 100 px;
+    padding: px;
+    background-color: bisque;
+    text-align: left;
+    margin-top: 1%;
+}
+
+.copy {
+    background-color: black;
+    color: aliceblue;
+    margin: 3px;
+    padding: 3 px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 20px;
+}
+
+.row {
+    justify-content: space-evenly;
+    margin: 3px;
+    ;
+}
+
+.card {
+    background-color: bisque;
+}
+
+.ancho-carousel {
+    width: 67vw;
+    margin: auto;
+}
+
+
+/* fin estilos index */
+
+
+/* inicio contactos */
+
+.mainContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    padding: 10px;
+    margin-top: 6%;
+}
+
+.form input {
+    margin-bottom: 50 px;
+    padding: 13px;
+    margin: 6px;
+}
+
+.tituloContacto {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* fin de contacto */
+
+
+/* comiezo de noticias */
+
+.hombreAraña {
+    max-width: 100%;
+    /* margin-left: 4vx;
+            margin-top: 12px; */
+}
+
+.mainNoticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    max-width: 100%;
+    text-align: center;
+    /* margin-left: 600px;
+            margin-top: 20px; */
+}
+
+.subNota {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.caracteristica {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+
+
+/* fin de noticias */
+
+
+/* comienzo de iciciar sesion */
+
+.tituloIniciar {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.mainIniciar {
+    background-color: bisque;
+    height: 65vh;
+}
+
+.mainIniciar section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formIniciar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 20%;
+}
+
+.formIniciar input {
+    margin-bottom: 10 px;
+    padding: 13px;
+    margin: 6px;
+}
+
+
+/* final de iniciar sesion */
+
+
+/* inicio de producto */
+
+.container {
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 6px;
+}
+
+.container-card {
+    background-color: bisque;
+    padding: 1px;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.parrafo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20%;
+}
+
+.parrafo-card p {
+    margin: 20px 0;
+}
+
+
+/* fin de producto */
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+    .container-card {
+        flex-direction: column;
+    }
+    .subNota {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 540px) {
+    .hombreAraña {
+        max-width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .container h2 {
+        text-align: center;
+    }
+    .container-card {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .container-card img {
+        max-width: 90%;
+    }
+    .subNota {
+        flex-direction: column;
+    }
+    .video {
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        height: 100%;
+    }
+    .mainIniciar {
+        display: flex;
+    }
+    .formIniciar {
+        display: inline;
+        align-items: flex-start;
+        padding: 0%;
+        margin: 0%;
+    }
+    .ubicacion {
+        display: flex;
+    }
+}
